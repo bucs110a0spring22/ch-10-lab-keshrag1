@@ -12,8 +12,7 @@ class Controller:
         self.height = height
         self.screen = pygame.display.set_mode((self.width, self.height))
         self.background = pygame.Surface(self.screen.get_size()).convert()
-        self.backgroung = pygame.image.load("assets/grace.png")
-        3self.background.fill((250, 250, 250))   set the background to white
+        self.background.fill((250, 250, 250))  # set the background to white
         pygame.font.init()  # you have to call this at the start, if you want to use this module.
         pygame.key.set_repeat(1, 50)  # initialize a held keey to act as repeated key strikes
         """Load the sprites that we need"""
