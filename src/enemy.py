@@ -21,4 +21,12 @@ class Enemy(pygame.sprite.Sprite):
         self.speed = 2
 
     def update(self):
-        print("'Update me,' says " + self.name)
+        if random.randrange(-1,2) == 1:
+          self.rect.y -= self.speed
+        if random.randrange(-1,2) == -1:
+          self.rect.y += self.speed
+        if random.randrange(-1,2) == 1:
+          self.rect.x -= self.speed
+        if random.randrange(-1,2) == -1:
+          self.rect.x += self.speed
+          #print("'Update me,' says " + self.name)
